@@ -32,14 +32,16 @@ function getFormValues(formObject){
 /* ADD OR REMOVE VARIABLES ACCORDING TO YOUR FORM*/
   if(formObject.RecId && checkID(formObject.RecId)){
     var values = [[formObject.RecId.toString(),         // กำหนดให้เป็น ID อัตโนมัติ
-                  formObject.ตัวแปร 1,
-                  formObject.ตัวแปร 2,
-                  formObject.ตัวแปร 3 ]];
+                  formObject.ตัวแปร1,
+                  formObject.ตัวแปร2,
+                  formObject.ตัวแปร3,
+                  formObject.ตัวแปร4 ]];
   }else{
     var values = [[new Date().getTime().toString(),
-                  formObject.ตัวแปร 1,
-                  formObject.ตัวแปร 2,
-                  formObject.ตัวแปร 3 ]];
+                  formObject.ตัวแปร1,
+                  formObject.ตัวแปร2,
+                  formObject.ตัวแปร3,
+                  formObject.ตัวแปร4 ]];
   }
   return values;
 }
