@@ -1,9 +1,8 @@
 function doGet(request) {
-  return HtmlService.createTemplateFromFile('Index').evaluate()
+  return HtmlService.createTemplateFromFile('index').evaluate()
       .addMetaTag('viewport','width=device-width , initial-scale=1')
       .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
 }
-
 function globalVariables(){ 
   var varArray = {
     spreadsheetId   : 'xxxxx',            //** ระบุ sheetID 
@@ -35,13 +34,13 @@ function getFormValues(formObject){
                   formObject.ตัวแปร1,
                   formObject.ตัวแปร2,
                   formObject.ตัวแปร3,
-                  formObject.ตัวแปร4 ]];
+                  formObject.ตัวแปร4]];
   }else{
     var values = [[new Date().getTime().toString(),
                   formObject.ตัวแปร1,
                   formObject.ตัวแปร2,
                   formObject.ตัวแปร3,
-                  formObject.ตัวแปร4 ]];
+                  formObject.ตัวแปร4]];
   }
   return values;
 }
