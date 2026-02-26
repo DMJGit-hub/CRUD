@@ -1,1 +1,102 @@
+<!-- ## The html code of the form goes here -->
+<!-- ## This is included in the Index.html page using "include('Form')" function -->
 
+<form id="myForm" class="p-2 border border-light rounded bg-light" onsubmit="handleFormSubmit(this)"> <!-- Call JavaScript function "handleFormSubmit" -->
+    <center><p class="h4 mb-4 text-center">ระบบสมัครสมาชิก</p> </center>
+    <div id="message"></div>
+    <input type="text" id="RecId" name="RecId" value="" style="display: none">
+	
+  <div class="form-group">
+		<label for="stuid" >เลขประจำตัว</label>
+		<input type="text" class="form-control" id="stuid" name="stuid" placeholder="เลขประจำตัว" required> <br>
+    <label for="name" >ชื่อ สกุล</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="ชื่อ สกุล" required>
+	</div>
+	
+  <div class="form-row">
+		<div class="form-group col-md-6">
+			<p>เพศ</p>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="gender" id="male" value="ชาย">
+				<label class="form-check-label" for="male">ชาย</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="gender" id="female" value="หญิง">
+				<label class="form-check-label" for="female">หญิง</label>
+			</div>
+		</div>
+	</div> <div class="form-group">
+    <label clss="form-label" for="คำนำหน้า">
+     <label>คำนำหน้า </label> 
+      <select id="fname">
+         <option value="เด็กหญิง">เด็กหญิง</option>
+         <option value="เด็กชาย">เด็กชาย</option>
+         <option value="นาย">นาย</option>
+         <option value="นางสาว">นางสาว</option>
+      </select>
+      </div>
+      
+     <br> <label for="name">ชื่อ</label>
+      <input type="text" id="name" name="name">
+      <label for="surname">นามสกุล</label>
+      <input type="text" id="surname" name="surname">
+
+      <br><br> <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+
+    <label class="form-label" for="เพศ">
+     <label>เพศ</label> 
+      <select id="gender">
+         <option value="ชาย">ชาย</option>
+         <option value="หญิง">หญิง</option>
+      </select>
+
+     <br><br> <label for="email">อีเมล</label>
+      <input type="text" id="email" name="email">
+
+      <label for="tel">เบอร์โทรศัพท์</label>
+      <input type="text" id="tel" name="tel">
+
+    <br><br> <label for="ads">ที่อยู่ปัจจุบัน</label>
+      <input type="text" id="ads" name="ads" >
+       
+    <br><br> <label for="amp">อำเภอ</label>
+      <input type="text" id="amp" name="amp" >
+      <label for="pv">จังหวัด</label>
+      <input type="text" id="pv" name="pv" >
+    
+    <br><br> <label for="zcode">รหัสไปรษณีย์</label>
+      <input type="text" id="zcode" name="zcode" >
+    
+    <label class="form-label" for="occ">
+     <label>อาชีพ</label> 
+      <select id="occ">
+         <option value="รับจ้าง">รับจ้าง</option>
+         <option value="รับราชการ">รับราชการ</option>
+      </select>
+
+<br><br><label class="form-label" for="hobbies">
+<label>งานอดิเรก</label> 
+<input type="checkbox" id="read" name="read" value="read">
+<label for="อ่านหนังสือ"> อ่านหนังสือ</label>
+
+<input type="checkbox" id="game" name="game" value="game">
+<label for="เล่นเกม">เล่นเกม</label>
+
+&emsp;<input type="checkbox" id="movies" name="movies" value="movies">
+<label for="ดูหนัง">ดูหนัง</label> <br>
+
+&emsp;&emsp;&emsp;&emsp;
+<input type="checkbox" id="sound" name="sound" value="sound">
+<label for="ฟังเพลง">ฟังเพลง</label>
+&emsp;&nbsp;
+<input type="checkbox" id="plants" name="plants" value="plants">
+<label for="ปลูกต้นไม้">ปลูกต้นไม้</label>
+<input type="checkbox" id="tour" name="tour" value="tour">
+<label for="ท่องเที่ยว">ท่องเที่ยว</label>
+
+
+<!-- Create submit button -->	   
+	<button type="submit" class="btn btn-primary">บันทึกข้อมูล</button>
+    <input class="btn btn-secondary" type="reset" value="รีเซ็ต">
+</form>
