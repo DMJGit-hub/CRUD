@@ -40,12 +40,13 @@
     if(dataArray){
       var result = "<table class='table table-sm' style='font-size:0.8em'>"+
                    "<thead style='white-space: nowrap'>"+
-                     "<tr>"+                               //Change table headings to match witht he Google Sheet
+                     "<tr>"+                               //Change table headings to match witht he Google Sheet : หัวตารางที่แสดงผล
                       "<th scope='col'>ลบ</th>"+
                       "<th scope='col'>แก้ไข</th>"+
                       "<th scope='col'>ไอดี</th>"+
-                      "<th scope='col'>เลขประจำตัว</th>"+
+                      "<th scope='col'>คำนำหน้า</th>"+
                       "<th scope='col'>ชื่อ สกุล</th>"+
+                      "<th scope='col'>วัน/เดือน/ปีเกิด</th>"+
                       "<th scope='col'>เพศ</th>"+
                     "</tr>"+
                   "</thead>";
@@ -87,8 +88,9 @@
   //POPULATE FORM
   function populateForm(records){
     document.getElementById('RecId').value = records[0][0];
-    document.getElementById('valA').value = records[0][0];                       
-    document.getElementById('valB').value = records[0][0];
+    document.getElementById('ตัวแปร1').value = records[0][0];                       
+    document.getElementById('ตัวแปร2').value = records[0][0];
+    document.getElementById('ตัวแปร3').value = records[0][0];
     document.getElementById(records[0][0] =='ชาย'? 'male':'female').checked = true;
     document.getElementById("message").innerHTML = "<div class='alert alert-warning' role='alert'>Update Record [ID: "+records[0][0]+"]</div>";
   }
