@@ -6,29 +6,38 @@
     <div id="message"></div>
     <input type="text" id="RecId" name="RecId" value="" style="display: none">
 	
+	
+<!--สร้างกล่องเครื่องมือรับค่าข้อมูล คำนำหน้า  ในรูปแบบ Dropdownlist -->
+
   <div class="form-group">
     <label clss="form-label" for="คำนำหน้า">
      <label>คำนำหน้า </label> 
-      <select id="fname">
+      <select class="form-control" id="fname" name="fname">
          <option value="เด็กหญิง">เด็กหญิง</option>
          <option value="เด็กชาย">เด็กชาย</option>
          <option value="นาย">นาย</option>
          <option value="นางสาว">นางสาว</option>
       </select>
       </div>
-      
-     <br> <label for="name">ชื่อ</label>
+
+ <!--สร้างกล่องเครื่องมือรับค่าข้อมูล ชื่อ-สกุล เป็นแบบกล่องข้อความ  -->
+
+      <label for="name">ชื่อ-สกุล </label>
       <input type="text" id="name" name="name">
     
-      <br><br> <label for="birthday">Birthday:</label>
-      <input type="date" id="birthday" name="birthday">
+     <br><br> <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"> 
 
+<!--สร้างกล่องเครื่องมือรับค่าข้อมูล เพศ ในรูปแบบ Dropdownlist -->
+
+  <div class="form-group">
     <label class="form-label" for="เพศ">
      <label>เพศ</label> 
-      <select id="gender">
+      <select class="form-control" id="gender" name="gender">
          <option value="ชาย">ชาย</option>
          <option value="หญิง">หญิง</option>
       </select>
+  </div>
 
  
 <!-- Create submit button -->	   
