@@ -34,13 +34,13 @@ function getFormValues(formObject){
                   formObject.ตัวแปร1,
                   formObject.ตัวแปร2,
                   formObject.ตัวแปร3,
-                  formObject.ตัวแปร4]];
+                  formObject.ตัวแปรสุดท้าย]];
   }else{
     var values = [[new Date().getTime().toString(),
                   formObject.ตัวแปร1,
                   formObject.ตัวแปร2,
                   formObject.ตัวแปร3,
-                  formObject.ตัวแปร4]];
+                  formObject.ตัวแปรสุดท้าย]];
   }
   return values;
 }
